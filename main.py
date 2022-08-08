@@ -412,7 +412,9 @@ while game.is_running:
     
     if exit_button.get_pressed():
         game.is_running = False
+    
 
+    print("hell")
     pygame.display.flip()
 
     
