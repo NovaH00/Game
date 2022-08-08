@@ -414,7 +414,7 @@ while game.is_running:
         game.is_running = False
     
 
-    print("hell")
+    
     pygame.display.flip()
 
     
