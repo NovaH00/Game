@@ -1,7 +1,6 @@
 
-from time import sleep
+
 from object import *
-from UI import*
 from game import Game
 from math import pi
 import pygame
