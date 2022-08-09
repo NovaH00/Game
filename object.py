@@ -1,8 +1,5 @@
 
 import math
-import pygame
-
-pygame.init()
 
 from vector_calutation import convert_to_vector, rotate_vector, angle_between, trig_angle
 
@@ -138,6 +135,8 @@ class button(object):
 
     
     def draw(self):
+        import pygame
+        pygame.init ()
         font = pygame.font.Font('freesansbold.ttf', self.text_size)
         text_surface = font.render(self.text, True, self.text_color, self.text_bg_color)
         text_rect = text_surface.get_rect()
@@ -153,6 +152,8 @@ class button(object):
         
     
     def get_pressed(self):
+        import pygame
+        pygame.init ()
         pressed = False
 
         font = pygame.font.Font('freesansbold.ttf', self.text_size)
