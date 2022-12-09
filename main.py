@@ -199,7 +199,7 @@ def map_restriction():
 
 def prematch_seperate():
     game.premath_counter += 1
-    second = 11
+    second = 16
     
     if int(second - game.premath_counter / 60) > 0:
         game.prematch_separate(player1, player1_bullets, player2, player2_bullets, int(second - game.premath_counter / 60))

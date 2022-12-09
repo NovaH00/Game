@@ -51,9 +51,11 @@ class character():
         self.pos[1] -= delta_y
     def acceleration_update(self, fps):
         delta_t = 1/fps
-        if self.is_moving_forward == True and self.speed < self.max_speed and self.is_moving_backward == False:
-            self.speed += self.acceleration*delta_t
-
+        if self.is_moving_forward == True and self.is_moving_backward == False:
+            if self.speed < self.max_speed:
+                self.speed += self.acceleration*delta_t
+            else: 
+                self.speed = self.max_speed
     def decelerarion_update(self, fps):
         delta_t = 1/fps
         if self.is_moving_forward == False and self.speed > 0 and self.is_moving_backward == True:
